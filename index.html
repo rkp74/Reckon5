@@ -5,40 +5,45 @@
 	<title> Translate Voice India </title>
 	<link rel="stylesheet" href="css/style.css">
   <script src="project.js"></script>
+  <script src="dropdown.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 <body>
   <!-- OUR 1ST STRIP DIV  -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="header">
         <span id="time"></span>
         <ul class="he">
             <li>
-                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#"><i class="fa-solid fa-house"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.google.co.in/">Google</a>
+                <a target="_blank" href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.instagram.com/">Instagram</a>
-            </li>
+                <a target="_blank" href="https://www.instagram.com/">
+ 
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li> -->
             <!-- <button class="btn"> <a href=""> login</a></button> -->
 
 
-        </ul>
+        <!-- </ul> -->
 
-    </div>
+    <!-- </div> -->
     <!-- OUR NAVBAR DIV  -->
-    <nav id="navbar">
+    <!-- <nav id="navbar">
         <div id="logo">
             <img src="asset/logo.png" alt="Translate Voice India">
         </div>
         <ul>
             
             <li class="items" id="nav2">
-                <a href="#">YouTube</a>
+                <a href="https://www.youtube.com" target="_blank">YouTube</a>
             </li>
             <li class="items" id="nav3">
                 <a href="#">Blog</a>
@@ -49,24 +54,44 @@
             <li class="items" id="nav8">
                 <a href="#">View Gallery</a>
             </li>
-            <li class="items " id="nav1">
-              <a target="_blank" href="aim.html">About us <i class="fas fa-care nav-link" ></i></a>
-              <!-- <ul>
-                <li class="items"><a href="aim.html">Our Aim</a></li>
-             <li class="items"><a href="team.html">Our Team</a></li>
-             <li><a href="contactus.html">Contact Us</a></li>
- 
-             </ul> -->
-              
-
-          </li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Learn More</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="about.html">About Us</a>
+                  <a href="aim.html">Our Objectives</a>
+                  <a href="team.html">Our Team</a>
+                </div>
+              </div>
             <li class="items" id="nav9">
                 <a href="#">Contact Us</a>
             </li>
         </ul>
     </nav>
-</div>
+</div> -->
   <p> Translate Voice India!!! </p>
+
+  <form >
+
+    <label >Video Link</label>
+    <input type="text" name="username" id=""><br><br>
+
+    <select >
+        <option>Select ur preferred language</option>
+        <option value="Personal">Personal</option>
+        <option value="Business">Business</option>
+        <option value="Premium">Premium</option>
+    </select><br><br>
+
+    <!-- <label >Upload ur file</label>
+    <input type="text" name="username" placeholder="Enter your Username" required><br><br> -->
+
+
+    <input type="submit" name="submit" value="Submit">
+
+
+
+</form>
+<br><br><br><br>
  
 
 </body>
