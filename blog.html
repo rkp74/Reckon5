@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+{% block start %}
+
+{% load static %}
+<main id="main">
+        <section id="blog" class="blog section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Blog</h2>
+                    <p>See our blogs where we discuss the concept and technology underlying WordMagic.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box">
+                            <div class="icon"><a href="https://wordmagic12170.blogspot.com/2022/11/automated-mcq-generation-using-bert-and.html"><img src="{%static 'images/blog.png'%}"></a></div>
+                            <h4 class="title"><a href="https://wordmagic12170.blogspot.com/2022/11/automated-mcq-generation-using-bert-and.html">Automated MCQ generation using Bert and T5 model</a></h4>
+                            <p class="description">T5 models are new to the field of NLP and same model can be used for multiple purpose like Translation,Summarization,MCQ Generation.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box">
+                            <div class="icon"><a href="https://wordmagic12170.blogspot.com/2022/11/mcq-generation-process.html"><img src="{%static 'images/blog.png'%}"></a></div>
+                            <h4 class="title"><a href="https://wordmagic12170.blogspot.com/2022/11/mcq-generation-process.html">Process of generation of MCQ</a></h4>
+                            <p class="description">Multiple steps, including abstract summarization, keyword extraction, question production, and distractor generation, can be used to create MCQs.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box">
+                            <div class="icon"><a href="https://wordmagic12170.blogspot.com/2022/11/how-to-generate-distractors-for-mcq.html"><img src="{%static 'images/blog.png'%}"></a></div>
+                            <h4 class="title"><a href="https://wordmagic12170.blogspot.com/2022/11/how-to-generate-distractors-for-mcq.html">Distractor Generator for MCQ</a></h4>
+                            <p class="description">There are numerous techniques to produce distracters from a given keyword. Advantages and Drawbacks of each techniques.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="icon-box">
+                            <div class="icon"><a href="https://wordmagic12170.blogspot.com/2022/11/want-to-know-more-about-how-to.html"><img src="{%static 'images/blog.png'%}"></a></div>
+                            <h4 class="title"><a href="https://wordmagic12170.blogspot.com/2022/11/want-to-know-more-about-how-to.html">Text Summarization</a></h4>
+                            <p class="description">Using T5,how we can achieve Abstractive summarization.Difference between Abstractive and Extractive Summarization. </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+</main>
+
+{% endblock %}
