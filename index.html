@@ -6,50 +6,52 @@
 	<link rel="stylesheet" href="css/style.css">
   <script src="project.js"></script>
   <script src="dropdown.js"></script>
+  <script src="survey.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 </head>
 <body>
   <!-- OUR 1ST STRIP DIV  -->
-  <!-- <div class="container">
+  <div class="container">
     <div class="header">
         <span id="time"></span>
         <ul class="he">
-            <li>
-                <a href="#"><i class="fa-solid fa-house"></i></a>
-            </li>
+           
             <li>
                 <a target="_blank" href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.youtube.co.in/"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
                 <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.instagram.com/">
- 
-                    <i class="fa-brands fa-instagram"></i></a>
-            </li> -->
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
             <!-- <button class="btn"> <a href=""> login</a></button> -->
 
 
-        <!-- </ul> -->
+        </ul>
 
-    <!-- </div> -->
+    </div>
     <!-- OUR NAVBAR DIV  -->
-    <!-- <nav id="navbar">
+    <nav id="navbar">
         <div id="logo">
-            <img src="asset/logo.png" alt="Translate Voice India">
+            <img src="asset/logo-white.png" alt="Translate Voice India">
         </div>
         <ul>
-            
-            <li class="items" id="nav2">
-                <a href="https://www.youtube.com" target="_blank">YouTube</a>
-            </li>
             <li class="items" id="nav3">
-                <a href="#">Blog</a>
+                <a href="index.html">Home</a>
+            </li>
+            <!-- <li class="items" id="nav2">
+              <button></button> id="button">  <a href="https://www.youtube.com" target="_blank">YouTube</a><button> 
+            </li> -->
+            <li class="items" id="nav3">
+                <a href="blog.html">Blog</a>
             </li>
             <li class="items" id="nav4">
-                <a href="#">Survey</a>
+                <a href="survey.html">Survey</a>
             </li> 
             <li class="items" id="nav8">
                 <a href="#">View Gallery</a>
@@ -63,36 +65,211 @@
                 </div>
               </div>
             <li class="items" id="nav9">
-                <a href="#">Contact Us</a>
+                <a href="contactus.html">Contact Us</a>
             </li>
         </ul>
     </nav>
-</div> -->
-  <p> Translate Voice India!!! </p>
+</div>
+  <!-- <p> Translate Voice India!!! </p> -->
 
-  <form >
+  <!-- form section  -->
+  <div class="border">
+  <div class="form-container">
+    <form method="post" enctype="multipart/form-data">
+        <label for="video_file">Upload Video File</label>
+        <input type="file" name="video_file" id="video_file" accept="video/*"><br><br>
 
-    <label >Video Link</label>
-    <input type="text" name="username" id=""><br><br>
+        <label for="video_url">Or Enter Video URL</label>
+        <input type="url" name="video_url" id="video_url" placeholder="Enter Video URL"><br><br>
 
-    <select >
-        <option>Select ur preferred language</option>
-        <option value="Personal">Personal</option>
-        <option value="Business">Business</option>
-        <option value="Premium">Premium</option>
-    </select><br><br>
+        <label for="language">Select your preferred language</label>
+        <select name="language">
+            <option>Select your preferred language</option>
+            <option value="hi">Hindi</option>
+            <option value="gu">Gujarati</option>
+            <option value="kn">Kannada</option>
+        </select><br><br>
 
-    <!-- <label >Upload ur file</label>
-    <input type="text" name="username" placeholder="Enter your Username" required><br><br> -->
+        <div class="button-container">
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</div>
+<br><br><br><br><br><br><br><br>
 
+<h2 id="heading1">Unlock the Potential of Video Dubbing with our Cutting-Edge Solution, TranslateVoiceIndia</h2>
 
-    <input type="submit" name="submit" value="Submit">
+<p id="content4">Are you facing challenges in reaching audiences across diverse linguistic backgrounds?<br> Introducing TranslateVoiceIndia, your ultimate companion in breaking language barriers and amplifying the impact of your video content effortlessly!</p>
 
+<!-- four-column layout -->
+<div class="two-column-container">
+    <!-- Custom text column -->
+    <div class="custom-text-column">
+      <h2 id="heading1">Our Mission</h2>
+      <p id="content1"><b>Empowering CIPAM's Vision:</b> Dedicated to the promotion and awareness of Intellectual Property in India, CIPAM requires a robust solution for dubbing videos from English to multiple Indian regional languages. TranslateVoiceIndia rises to the occasion, facilitating mass outreach and fostering public awareness through seamless video localization.</p>
+    </div>
+  
+    <!-- Image column -->
+    <div class="image-column">
+      <!-- Your image content -->
+      <img src="image1.jpg" alt="Image 1">
+    </div>
+  </div>
+  <br>
+  <div class="two-column-container">
+    <!-- Custom text column -->
+    <div class="custom-text-column">
+      <h2 id="heading1">Key Features</h2>
+      <p id="content1"> <b>Precise Dubbing Capabilities:</b> TranslateVoiceIndia offers advanced voiceover generation in a natural, human-like voice, ensuring clarity and authenticity across languages like Hindi, Marathi, Bengali, Gujarati, Tamil, Telugu, and more.
+        <br>
+        <b>Simplified Translation:</b> Say goodbye to language complexities! Our software ensures translated voiceovers and text supers maintain simplicity and clarity, guaranteeing easy comprehension for diverse audiences.
+    <br><br>
+    
+    <b>Seamless Integration:</b> Whether you're a desktop user , TranslateVoiceIndia seamlessly integrates into your workflow, ensuring convenience and accessibility wherever you are.
 
+      </p>
+    </div>
+  
+    <!-- Image column -->
+    <div class="image-column">
+      <!-- Your image content -->
+      <img src="image1.jpg" alt="Image 2">
+    </div>
+  </div>
 
-</form>
-<br><br><br><br>
+  <p id="content4">
+    Empower Your Content, Expand Your Reach: Experience the power of TranslateVoiceIndia and revolutionize the way you connect with audiences across India's diverse linguistic landscape.
+    <br><br>
+
+ Ready to embark on your video localization journey?
+ <br>
+ Explore TranslateVoiceIndia today and witness the transformation firsthand!
+<br><br>
+</p>
+
+<!-- Guide section -->
+<div class="guide-section">
+    <h2 id="heading1">Ultimate Guide on Downloading YouTube Videos Online Easily</h2><br>
+    <p id="content4">Discover the simplest method for downloading YouTube videos online:</p>
+  
+    <ol >
+      <li id="content4" >Copy the link of the YouTube video you intend to download.</li>
+      <img src="asset/logo.png" alt="pictureoflanguage" width="400" height="250" style="background-color: black;" title=""><br><br>
+      <li id="content4">Paste the copied YouTube video link into our site’s designated input field.</li><br>
+      <img src="asset/logo.png" alt="pictureoflanguage" width="400" height="250" style="background-color: black;" title="logo">
+    </ol>
+  </div><br><br>
+  <h1 style="text-align: center;">There are no language barriers when you are smiling.</h1><br><br>
+  <br><br>
+  <div class="backImg"></div>
+  <div class="backImg1"></div>
+  <br><br>
+
+  <p id="content4">"In a world where communication knows no bounds, our video dubbing service ensures your message resonates across cultures, languages, and borders."</p>
+  <p id="content4">"From script to screen, our audio translation app brings your vision to life in every language imaginable, ensuring your message is heard loud and clear."</p>
+  <br><br>
+
+  <!-- this tag for meking line -->
+  <hr>
+
+<!-- OUR FOOTER SECTION  -->
+<footer class="footer">
+    <!-- for outer most div   -->
+    <div class="f1">
+        <!-- OUR inner div  -->
+        <div id="f2">
+            <div class="f3">
+                <div class="f1a">
+                    <h2 class="f1ah">ABOUT UP POLICE</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/article/en--right-to-information">Right to information</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/en/circularsall">Departmental Circulars</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/en/governmentorders">Departmental Orders</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/article/en/police-welfare">Police welfare</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/pages/en/topmenu/about-us/en-general-information">UP Police at a Glance</a></li>
+                    </ul>
+                </div>
+                <div class="f1a">
+                    <h2 class="f1ah">HELP DESK</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/article/en/help">Help</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/pages/en/topmenu/en-contact-us/en-contact-us">Feedback</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://uppolice.gov.in/article/en/dos-and-dont">Do's and Don't</a></li>
+                    </ul>
+                </div>
+                <div class="f1a">
+                    <h2 class="f1ah">FOLLOWS US</h2>
+                    <hr>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/uppolice/">Facebook</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/uppolice/">Twitter</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCU6wKyV1ToMUSzAVQDLUaig">Youtube</a></li>
+                    </ul>
+                </div>
+                <div id="f1d">
+                    <h2 class="f1ah">MOBILE APPS </h2>
+                    <hr>
+                    <h4 id="p">Eg: Citizen Services App</h4>
+                    <p>Verifications, Online FIR Status,
+                        <br> Lost Article Report</p>
+                    <a href="https://uppolice.gov.in/article/en/lost-and-found"><img id="f1dimg" src="android-app.png" alt="Google Play Store"></a>
+  
+                </div>
+                <div class="f1a">
+                    <h2 class="f1ah">Click for  Mail</h2>
+                    <hr>
+                    <img id="f1eimg" src="gov.png" alt="gov logo">
+                    <ul>
+                        <li><a href="https://uppolice.gov.in/site/writereaddata/siteContent/Rules/202006091547318548E-mail_policy_of_Government_of_India_3.pdf">Click for e-mail policy</a></li>
+                    </ul>
+  
+                </div>
+                
+  
+            </div>
+            <hr>
+            <p id="last">This site is managed by TranslateVoiceIndia Team Designed by "Diya Garg" Since ,2024 </p>
+        </div>
+  
+    </div>
+  
+    </div>
+  
+  </footer>
  
+
+</div>
+
 
 </body>
 

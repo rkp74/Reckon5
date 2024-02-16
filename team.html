@@ -1,107 +1,196 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
- <meta charset="utf-8">
- <title> Our Team </title>
- <link rel="stylesheet" href="team.css">
- <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title> Translate Voice India </title>
+	<link rel="stylesheet" href="css/team.css">
+  <script src="project.js"></script>
+  <script src="dropdown.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
-
-
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-              <li class="logo"><a href="index.html"> <img src="logo.jpg" alt="TVC" height="50px" width="50px" /></a> </li>
-              <li><a href="youtube.html">YouTube</a></li>
-      
-              <li><a href="blog.html">Blog<i class="fas fa-angle-down"></i> </a></li>
-      
-              <li><a href="survey.html">Survey <i class="fas fa-angle-down"></i> </a>
+   <!-- OUR 1ST STRIP DIV  -->
+   <div class="container">
+    <div class="header">
+        <span id="time"></span>
+        <ul class="he">
+           
+            <li>
+                <a target="_blank" href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
             </li>
-              
-              <li><a href="about.html">About Us</a>
-                 <ul>
-                     <li><a href="aim.html">Our Aim</a></li>
-                  <li><a href="team.html">Our Team</a></li>
-                  <li><a href="contactus.html">Contact Us</a></li>
-      
-                </ul>
+            <li>
+                <a target="_blank" href="https://www.youtube.co.in/"><i class="fa-brands fa-youtube"></i></a>
             </li>
-               
-              </ul> 
-          </nav>
-  </header>
-  <div id="main"> 
-<div class="team">
-    <div class="column">
-      <div class="card">
-        <img src="rajan.jfif" alt="Rajan" style="width:100%">
-        <div class="container">
-          <h2>Rajan Kumar</h2>
-          <p class="title">CEO &amp; Founder</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>202051152@iiitvadodara.ac.in</p>
-          <p>
-              <a href = "contactus.html">
-                <button class="button">Contact</button>
-              </a>
-          </p>
-        </div>
-      </div>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <!-- <button class="btn"> <a href=""> login</a></button> -->
+
+
+        </ul>
+
     </div>
-  
-    <div class="column">
-        <div class="card">
-          <img src="diya.jfif" alt="diya" style="width:100%">
-          <div class="container">
-            <h2>Diya Garg</h2>
-            <p class="title">Web Developer&amp; Founder</p>
-            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-            <p>202251044@iiitvadodara.ac.in</p>
-            <p>
-                <a href = "contactus.html">
-                  <button class="button">Contact</button>
-                </a>
-            </p>
-          </div>
+    <!-- OUR NAVBAR DIV  -->
+    <nav id="navbar">
+        <div id="logo">
+            <img src="asset/logo.png" alt="Translate Voice India">
         </div>
+        <ul>
+            <li class="items" id="nav3">
+                <a href="index.html">Home</a>
+            </li>
+            <!-- <li class="items" id="nav2">
+              <button></button> id="button">  <a href="https://www.youtube.com" target="_blank">YouTube</a><button> 
+            </li> -->
+            <li class="items" id="nav3">
+                <a href="blog.html">Blog</a>
+            </li>
+            <li class="items" id="nav4">
+                <a href="survey.html">Survey</a>
+            </li> 
+            <li class="items" id="nav8">
+                <a href="#">View Gallery</a>
+            </li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Learn More</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="about.html">About Us</a>
+                  <a href="aim.html">Our Objectives</a>
+                  <a href="team.html">Our Team</a>
+                </div>
+              </div>
+            <li class="items" id="nav9">
+                <a href="contactus.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<!-- Card section -->
+<section class="card-section">
+  < <div class="card">
+      <img src="./DSC_0025.JPG" alt="Card Image 1">
+      <h2>XXXX</h2>
+      <p>Card description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a  target="_blank" href="https://www.google.com/" class="card-button">Know more</a>
+  </div>
+  < <div class="card">
+      <img src="./DSC_0025.JPG" alt="Card Image 1">
+      <h2>XXXX</h2>
+      <p>Card description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a  target="_blank" href="https://www.google.com/" class="card-button">Know more</a>
+  </div>
+  < <div class="card">
+      <img src="./DSC_0025.JPG" alt="Card Image 1">
+      <h2>XXXX</h2>
+      <p>Card description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a  target="_blank" href="https://www.google.com/" class="card-button">Know more</a>
+  </div>
+  < <div class="card">
+      <img src="./DSC_0025.JPG" alt="Card Image 1">
+      <h2>XXXX</h2>
+      <p>Card description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <a  target="_blank" href="https://www.google.com/" class="card-button">Know more</a>
+  </div>
+</section>
+
+<!--  footer section  -->
+
+<!-- OUR FOOTER SECTION  -->
+<footer class="footer">
+  <!-- for outer most div   -->
+  <div class="f1">
+      <!-- OUR inner div  -->
+      <div id="f2">
+          <div class="f3">
+              <div class="f1a">
+                  <h2 class="f1ah">ABOUT UP POLICE</h2>
+                  <hr>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en--right-to-information">Right to information</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/en/circularsall">Departmental Circulars</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/en/governmentorders">Departmental Orders</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en/police-welfare">Police welfare</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/pages/en/topmenu/about-us/en-general-information">UP Police at a Glance</a></li>
+                  </ul>
+              </div>
+              <div class="f1a">
+                  <h2 class="f1ah">HELP DESK</h2>
+                  <hr>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en/help">Help</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/pages/en/topmenu/en-contact-us/en-contact-us">Feedback</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en/dos-and-dont">Do's and Don't</a></li>
+                  </ul>
+              </div>
+              <div class="f1a">
+                  <h2 class="f1ah">FOLLOWS US</h2>
+                  <hr>
+                  <ul>
+                      <li>
+                          <a href="https://www.facebook.com/uppolice/">Facebook</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://twitter.com/uppolice/">Twitter</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://www.youtube.com/channel/UCU6wKyV1ToMUSzAVQDLUaig">Youtube</a></li>
+                  </ul>
+              </div>
+              <div id="f1d">
+                  <h2 class="f1ah">MOBILE APPS </h2>
+                  <hr>
+                  <h4 id="p">Eg: Citizen Services App</h4>
+                  <p>Verifications, Online FIR Status,
+                      <br> Lost Article Report</p>
+                  <a href="https://uppolice.gov.in/article/en/lost-and-found"><img id="f1dimg" src="android-app.png" alt="Google Play Store"></a>
+
+              </div>
+              <div class="f1a">
+                  <h2 class="f1ah">Click for  Mail</h2>
+                  <hr>
+                  <img id="f1eimg" src="gov.png" alt="gov logo">
+                  <ul>
+                      <li><a href="https://uppolice.gov.in/site/writereaddata/siteContent/Rules/202006091547318548E-mail_policy_of_Government_of_India_3.pdf">Click for e-mail policy</a></li>
+                  </ul>
+
+              </div>
+
+          </div>
+          <hr>
+          <p id="last">This site is managed by TranslateVoiceIndia Team Designed by "Diya Garg" Since ,2024 </p>
       </div>
 
-    <div class="column">
-      <div class="card">
-        <img src="neetu.jfif" alt="neetu" style="width:100%">
-        <div class="container">
-          <h2>Neetu Choudhary</h2>
-          <p class="title">ML</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>202251075@iiitvadodara.ac.in</p>
-          <p>
-            <a href = "contactus.html">
-              <button class="button">Contact</button>
-            </a>
-        </p>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="manan.jpg" alt="manan" style="width:100%">
-        <div class="container">
-          <h2>Manan Sharma</h2>
-          <p class="title">Designer</p>
-          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-          <p>202251070@iiitvadodara.ac.in</p>
-          <p>
-            <a href = "contactus.html">
-              <button class="button">Contact</button>
-            </a>
-        </p>
-        </div>
-      </div>
-    </div>
   </div>
-</div>
+
+  </div>
+
+</footer>
+
   </body>
   </html>

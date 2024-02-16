@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f8f5e6;
+  background-color: white;
   overflow-x: hidden;
 }
 
@@ -28,7 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   width: 100%;
 }
 
@@ -41,7 +41,7 @@ body {
 
 #logo img {
   margin: 20px 10px;
-  height: 13vh;
+  height: 6vh;
 }
 
 #navbar ul {
@@ -52,7 +52,7 @@ body {
   display: flex;
   width: 100%;
   height: 25px;
-  background-color: #0f5484;
+  background-color: #049ac0;
   position: absolute;
   top: 0;
   justify-content: flex-end;
@@ -69,7 +69,7 @@ body {
 }
 
 .header ul li a {
-  color: white;
+  color: rgb(231, 219, 219);
   display: block;
   margin: 0px 14px;
   text-decoration: none;
@@ -88,9 +88,9 @@ body {
 
 #navbar::before {
   content: "";
-  background-color: black;
+  background-color: #195094;
   position: absolute;
-  height: 8rem;
+  height: 5rem;
   width: 100%;
   z-index: -1;
   opacity: 90.0%;
@@ -103,11 +103,12 @@ body {
 }
 
 #navbar ul li a {
-  color: #f0eeee;
+  color: black;
   display: block;
   padding: 10px 15px;
   text-decoration: none;
   transition: all 0.3s;
+  font-weight: bolder;
 }
 
 #navbar ul li a:hover {
@@ -117,14 +118,444 @@ body {
 /* time css */
 #time {
   display: block;
-  margin-right: auto;
-  margin-left: 1rem;
+  margin-right: 53.5rem;
   color: white;
   margin-top: 2px;
   padding: 2px;
 }
 
-/* footer css start */
+/* dropdown css */
+/* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Aimcss  */
+
+
+.card1 {
+  /* background-color: transparent; */
+  width: 500px;
+  height: 500px;
+  /* perspective: 1000px; */
+  /* border: 3px solid rgb(0, 0, 0); */
+  float: left;
+  margin-right: -20%;
+  margin-top: 20vh;
+  
+}
+.card1 {
+  color: rgb(37, 32, 32);
+}
+
+#main{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+ 
+}
+
+/* body {
+  background-image: url('bg1.jpg');
+} */
+
+.card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2); */
+
+
+}
+.card1:hover .card-inner1 {
+  transform: rotateY(180deg);
+  /* scale: 0.2; */
+}
+.card-front1, .card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.card-front1 {
+  /* background-color: rgb(243, 200, 200); */
+  background-color: #0f5484;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius:0px 50px;
+}
+.card-back1 {
+  background-color: #0f5484;
+  /* background-color: rgb(243, 200, 200); */
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius:  50px 0px ;
+}
+.card-back1 p{
+   margin: 10px;
+}
+
+.card2 {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  /* perspective: 1000px; */
+  /* border: 3px solid rgb(0, 0, 0);  */
+  float: left;
+  margin-top: 20vh;
+
+
+}
+
+.card2 {
+  color: rgb(44, 58, 42);
+}
+
+
+.card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  /* box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2); */
+  
+}
+.card2:hover .card-inner2 {
+  transform: rotateY(180deg);
+}
+.card-front2, .card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-front2 {
+  background-color: black;
+  color: white;
+  border-radius: 0px 50px;
+}
+.card-back2 {
+  background-color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50px 0px;
+}
+
+.card-back2 p{
+  margin: 10px;
+}
+
+/* p{
+  font-size: 30px;
+  font-weight: bold;
+ font-variant: small-caps;
+
+} */
+
+/* dropdown menu css */
+
+
+.form-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  /* margin-top: calc(var(--navbar-height) + 20px); Adjust as needed */
+  padding: 20px;
+  background-color: #4aa4ba; /* Adjust background color as needed */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 5px solid #0f5484;
+  margin-top: 45px;
+}
+
+form {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 45vw;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #0f5484;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  width: 35%; /* Adjust the width of the buttons */
+}
+
+/* Adjust the position of the form for smaller screens */
+@media screen and (max-width: 600px) {
+  .form-container {
+      width: 80%;
+  }
+}
+
+.two-column-container {
+  display: flex;
+  margin: 20px; /* Add margin for space around the layout */
+  
+}
+
+/* Custom text column */
+.custom-text-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.custom-text-column h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.custom-text-column p {
+  margin-bottom: 20px;
+}
+
+/* Image column */
+.image-column {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-column h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+
+
+.border {
+  width: 100%;
+  height: 85vh;
+  background-image: url('../asset/camera-3376230.jpg');
+  background-size: cover; /* Adjusts the background image to cover the entire container */
+  background-position: center;
+  /* background-color: #AFDBF5; */
+  margin-top: calc(var(--navbar-height) - 95px); /* Adjust to touch the navbar */
+  margin-bottom: 400px;
+  padding-top: 30px;
+  margin-top: -29px;
+}
+
+#button{
+  background-color: transparent;
+  border-radius: 15px;
+}
+
+#heading1
+{
+  color: black; /* Text color */
+  margin-top: 60px; /* Adjust spacing */
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+#heading2,
+#heading3 {
+  color: black; /* Text color */
+  margin-top: 20px; /* Adjust spacing */
+  text-align: center;
+  
+}
+
+#content1,
+#content2 {
+  color: black; /* Text color */
+  margin-top: 20px; /* Adjust spacing */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Adjust line height */
+  justify-content: center;
+  text-align: left;
+  direction: ltr;
+  margin-left: auto; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+  width: 80%; /* Set width for better centering */
+}
+#content4{
+  color: black; /* Text color */
+  margin-top: 20px; /* Adjust spacing */
+  margin-bottom: 20px;
+  line-height: 1.5; /* Adjust line height */
+  justify-content: center;
+  text-align: center;
+  margin-left: auto; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+  width: 80%; /* Set width for better centering */
+  font-size:20px;
+}
+.guide-section{
+  text-align: center;
+}
+#guide-section{
+  margin-top: 30px;
+
+}
+
+.backImg{
+  width: 400vh;
+  height: 100vh;
+  /* background-color: black; */
+  background-image: url(./img1.jpg);
+  background-repeat: repeat-x;
+  background-size: 100% 100%; /*css3*/
+  background-attachment: fixed;
+}
+.backImg1{
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+  background-image: url('img6.jpg');
+  background-repeat: repeat-x;
+  background-size: 100% 100%; /*css3*/
+  background-attachment: fixed;
+}
+
+.backImg2{
+  width: 100%;
+  height: 100vh;
+  /* background-color: black; */
+  background-image: url('img8.jpg');
+  background-repeat: repeat-x;
+  background-size: 100% 100%; /*css3*/
+  background-attachment: fixed;
+}
+
+
+
+
+
+/* Footer styles */
+
+
+footer {
+  background-color: #0f5484;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}
 
 .footer {
   /* overflow-x: hidden; */
@@ -194,13 +625,6 @@ footer {
   margin: 5px;
 }
 
-#time {
-  display: block;
-  margin-right: 33.5rem;
-  color: white;
-  margin-top: 2px;
-  padding: 2px;
-}
 
 #last {
   display: flex;
@@ -208,131 +632,16 @@ footer {
   padding: 5px;
 }
 
-/* Aimcss  */
 
 
-.card1 {
-  background-color: transparent;
-  width: 500px;
-  height: 500px;
-  perspective: 1000px;
-  border: 3px solid rgb(0, 0, 0);
-  float: left;
-  margin-right: -20%;
-  margin-top: 20vh;
-  
-}
-.card1 {
-  color: rgb(37, 32, 32);
-}
-
-#main{
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  padding-top: 50px;
- 
-}
-
-/* body {
-  background-image: url('bg1.jpg');
-} */
-
-.card-inner1 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 
 
-}
-.card1:hover .card-inner1 {
-  transform: rotateY(180deg);
-  /* scale: 0.2; */
-}
-.card-front1, .card-back1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.card-front1 {
-  /* background-color: rgb(243, 200, 200); */
-  background-color: #0f5484;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-back1 {
-  background-color: #0f5484;
-  /* background-color: rgb(243, 200, 200); */
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.card2 {
-  background-color: transparent;
-  width: 500px;
-  height: 500px;
-  perspective: 1000px;
-  border: 3px solid rgb(0, 0, 0); 
-  float: left;
-  margin-top: 20vh;
-
-}
-
-.card2 {
-  color: rgb(44, 58, 42);
-}
 
 
-.card-inner2 {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
-  
-}
-.card2:hover .card-inner2 {
-  transform: rotateY(180deg);
-}
-.card-front2, .card-back2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card-front2 {
-  background-color: black;
-  color: white;
-}
-.card-back2 {
-  background-color: black;
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
 
-/* p{
-  font-size: 30px;
-  font-weight: bold;
- font-variant: small-caps;
 
-} */
+
+
+
+
+

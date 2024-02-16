@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>About - Translate Voice India</title>
+	<meta charset="UTF-8">
+	<title> Translate Voice India </title>
+	<link rel="stylesheet" href="css/about.css">
+  <script src="about.js"></script>
+  <script src="dropdown.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    <!-- OUR 1ST STRIP DIV  -->
+  <!-- OUR 1ST STRIP DIV  -->
   <div class="container">
     <div class="header">
         <span id="time"></span>
         <ul class="he">
+           
             <li>
-                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                <a target="_blank" href="https://www.google.co.in/"><i class="fa-brands fa-google"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.google.co.in/">Google</a>
+                <a target="_blank" href="https://www.youtube.co.in/"><i class="fa-brands fa-youtube"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li>
-                <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
             </li>
             <!-- <button class="btn"> <a href=""> login</a></button> -->
 
@@ -36,34 +40,147 @@
             <img src="asset/logo.png" alt="Translate Voice India">
         </div>
         <ul>
-            
-            <li class="items" id="nav2">
-                <a href="#">YouTube</a>
-            </li>
             <li class="items" id="nav3">
-                <a href="#">Blog</a>
+                <a href="index.html">Home</a>
+            </li>
+            <!-- <li class="items" id="nav2">
+              <button></button> id="button">  <a href="https://www.youtube.com" target="_blank">YouTube</a><button> 
+            </li> -->
+            <li class="items" id="nav3">
+                <a href="blog.html">Blog</a>
             </li>
             <li class="items" id="nav4">
-                <a href="#">Survey</a>
+                <a href="survey.html">Survey</a>
             </li> 
             <li class="items" id="nav8">
                 <a href="#">View Gallery</a>
             </li>
-            <li class="items " id="nav1">
-              <a href="#">About us <i class="fas fa-care"></i></a>
-
-          </li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Learn More</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="about.html">About Us</a>
+                  <a href="aim.html">Our Objectives</a>
+                  <a href="team.html">Our Team</a>
+                </div>
+              </div>
             <li class="items" id="nav9">
-                <a href="#">Contact Us</a>
+                <a href="contactus.html">Contact Us</a>
             </li>
         </ul>
     </nav>
 </div>
-    <main>
-        <p>This is the About page of Translate Voice India. Insert your content here.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 Translate Voice India</p>
-    </footer>
-</body>
-</html>
+<!--  video section -->
+        
+    <!-- Video section -->
+<!-- Video section -->
+<section class="video-section">
+    <div class="video-overlay">
+        <h2>Welcome to Translate Voice India</h2>
+        <p>Explore our services and commitment to safety</p>
+        <button id="playButton" onclick="startVideo()">Play Video</button>
+    </div>
+    <video id="mainVideo" controls loop poster="./asset/img7.jpg">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+</section>
+
+<!--  footer section  -->
+
+<!-- OUR FOOTER SECTION  -->
+<footer class="footer">
+  <!-- for outer most div   -->
+  <div class="f1">
+      <!-- OUR inner div  -->
+      <div id="f2">
+          <div class="f3">
+              <div class="f1a">
+                  <h2 class="f1ah">ABOUT UP POLICE</h2>
+                  <hr>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en--right-to-information">Right to information</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/en/circularsall">Departmental Circulars</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/en/governmentorders">Departmental Orders</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en/police-welfare">Police welfare</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/pages/en/topmenu/about-us/en-general-information">UP Police at a Glance</a></li>
+                  </ul>
+              </div>
+              <div class="f1a">
+                  <h2 class="f1ah">HELP DESK</h2>
+                  <hr>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en/help">Help</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/pages/en/topmenu/en-contact-us/en-contact-us">Feedback</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://uppolice.gov.in/article/en/dos-and-dont">Do's and Don't</a></li>
+                  </ul>
+              </div>
+              <div class="f1a">
+                  <h2 class="f1ah">FOLLOWS US</h2>
+                  <hr>
+                  <ul>
+                      <li>
+                          <a href="https://www.facebook.com/uppolice/">Facebook</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://twitter.com/uppolice/">Twitter</a></li>
+                  </ul>
+                  <ul>
+                      <li>
+                          <a href="https://www.youtube.com/channel/UCU6wKyV1ToMUSzAVQDLUaig">Youtube</a></li>
+                  </ul>
+              </div>
+              <div id="f1d">
+                  <h2 class="f1ah">MOBILE APPS </h2>
+                  <hr>
+                  <h4 id="p">Eg: Citizen Services App</h4>
+                  <p>Verifications, Online FIR Status,
+                      <br> Lost Article Report</p>
+                  <a href="https://uppolice.gov.in/article/en/lost-and-found"><img id="f1dimg" src="android-app.png" alt="Google Play Store"></a>
+
+              </div>
+              <div class="f1a">
+                  <h2 class="f1ah">Click for  Mail</h2>
+                  <hr>
+                  <img id="f1eimg" src="gov.png" alt="gov logo">
+                  <ul>
+                      <li><a href="https://uppolice.gov.in/site/writereaddata/siteContent/Rules/202006091547318548E-mail_policy_of_Government_of_India_3.pdf">Click for e-mail policy</a></li>
+                  </ul>
+
+              </div>
+
+          </div>
+          <hr>
+          <p id="last">This site is managed by TranslateVoiceIndia Team Designed by "Diya Garg" Since ,2024 </p>
+      </div>
+
+  </div>
+
+  </div>
+
+</footer>
+
+  
+  </body>
+  </html>
