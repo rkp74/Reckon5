@@ -174,80 +174,96 @@
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
 
-  /* Blog section */
+/* Blog section */
+/* Blog section */
 .blog {
-    padding: 60px 0;
-  }
-  
-  .blog .section-title {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .blog .section-title h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .blog .section-title p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 0;
-  }
-  
-  .blog .row {
-    margin-top: 30px;
-  }
-  
-  .blog .col-lg-3 {
-    margin-bottom: 30px;
-  }
-  
-  .blog .icon-box {
-    padding: 20px;
-    background: #a9d3e6;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  .blog .icon-box:hover {
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  }
-  
-  .blog .icon-box .icon {
-    margin: 0 auto 15px auto;
-    width: 64px;
-    height: 64px;
-    overflow: hidden;
-    background: #4CAF50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-  }
-  
-  .blog .icon-box:hover .icon {
-    background: #333;
-  }
-  
-  .blog .icon-box .icon img {
-    max-width: 100%;
-  }
-  
-  .blog .icon-box .title {
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .blog .icon-box .description {
-    font-size: 16px;
-    line-height: 24px;
-  }
+  padding: 60px 0;
+}
+
+.blog .section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.blog .section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: -31px;
+}
+
+
+.blog .section-title p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.blog .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.blog .col-lg-3 {
+  margin-bottom: 30px;
+  flex: 0 0 calc(33.333% - 40px);
+  max-width: calc(33.333% - 40px);
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+}
+.blog .icon-box {
+  padding: 20px;
+  background: #a9d3e6;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.blog .icon-box:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.blog .icon-box .icon {
+  margin: 0 auto 15px auto;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  background: #4CAF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.blog .icon-box:hover .icon {
+  background: #333;
+}
+
+.blog .icon-box .icon img {
+  max-width: 100%;
+}
+
+.blog .icon-box .title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center; /* Center the title */
+}
+
+.blog .icon-box .description {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center; /* Center the description */
+}
+
+
+
   /* Footer styles */
 
 
